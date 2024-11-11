@@ -1,8 +1,8 @@
 export const NavItem = {
   baseStyle: {
     px: 4,
-    fontSize: ['xs', 'sm', 'md'],
-    color: 'dark',
+    fontSize: ['lg', 'lg', 'md'],
+    color: ['white', '', 'dark'],
     fontWeight: 'bold',
     textTransform: 'uppercase',
   },

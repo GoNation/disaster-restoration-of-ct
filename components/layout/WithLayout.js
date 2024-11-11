@@ -125,11 +125,6 @@ const WithLayout = Component => {
               icon: <FiPhone />,
               href: `tel:${aboutData?.phone}`,
             },
-            {
-              name: 'Directions',
-              icon: <FiNavigation />,
-              href: decideMapString(aboutData),
-            },
           ]}
         />
       </ModalProvider>

@@ -43,10 +43,11 @@ export const Navigation = {
       width: '100vw',
       height: '100vh',
       bg: 'gray.800',
-      zIndex: 10, // Menu is underneath the hamburger icon
+      zIndex: 9999, // Menu is underneath the hamburger icon
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      flexDirection: 'column',
     },
     hamburgerIconOpen: {
       position: 'fixed', // Fix the position of the hamburger icon
