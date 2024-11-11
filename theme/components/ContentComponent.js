@@ -2,7 +2,7 @@ const baseStyle = {
   containerStyle: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'center',
     p: 4,
     position: 'relative',

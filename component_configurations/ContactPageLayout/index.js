@@ -2,7 +2,7 @@ export const contactPageLayoutConfig = {
   formName: 'contact',
   title: 'Get In Touch',
   desc: ``,
-  hideMap: false,
+  hideMap: true,
   fields: [
     { type: 'text', name: 'name', placeholder: 'Name' },
     { type: 'email', name: 'email', placeholder: 'Email' },

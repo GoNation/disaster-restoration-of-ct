@@ -24,11 +24,38 @@
   },
   "pageComponents": [
     {
-      "componentName": "Gallery",
-      "identifier": "Homepage Hero",
+      "componentName": "Hero",
+      "storyName": "Homepage hero",
+      "configName": "heroConfig",
+      "variation": "heroConfig"
+    },
+    {
+      "componentName": "SideBySideImage",
+      "storyName": "about story homepage",
+      "sideBySideVariation": "default",
+      "contentVariation": "sideBySideReversed",
+      "imageVariation": "default",
       "config": {
-        "id": "gallery"
+        "reversed": false,
+        "ignoreQuery": true,
+        "id": "about"
       }
+    },
+    {
+      "componentName": "SideBySideImage",
+      "storyName": "services story homepage",
+      "sideBySideVariation": "default",
+      "contentVariation": "sideBySideReversed",
+      "imageVariation": "default",
+      "config": {
+        "reversed": true,
+        "ignoreQuery": true,
+        "id": "services"
+      }
+    },
+    {
+      "componentName": "ContactPageLayout",
+      "configName": "contactPageLayoutConfig"
     }
   ]
 }

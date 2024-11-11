@@ -40,8 +40,9 @@ const HoursByDay = ({ hours }) => {
       color={'white'}
       py={[8, 8, 24]}
       flexDir={'column'}
-      bg={'white'}
-      backgroundImage={`url("https://www.transparenttextures.com/patterns/arches.png")`}
+      bg={'dark'}
+      borderBottom={'2px solid'}
+      borderColor={'white'}
     >
       <Box
         width={'100%'}

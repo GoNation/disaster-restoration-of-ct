@@ -1,5 +1,8 @@
 export const Heading = {
-  baseStyle: {},
+  baseStyle: {
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+  },
   variants: {
     smallTitle: {
       fontSize: ['lg', 'xl', '', '2xl'],

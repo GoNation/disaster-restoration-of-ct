@@ -55,14 +55,14 @@ const componentFactory = (componentConfig, commonData, siteConfig) => {
     withExtendedTopTitle,
   } = componentConfig || {};
 
-  const { shout } = commonData.shoutData;
+  const shout = commonData?.shoutData?.shout;
   const image = shout?.image;
   const ctas = shout?.ctas || {};
   const isDefaultImage = image?.isDefault;
   const cloudinaryId = isDefaultImage
     ? business.avatar.image.cloudinaryId
     : image?.image?.cloudinaryId;
-  const shoutImage = `${commonData?.shoutData.imageBaseUrl}/${cloudinaryId}`;
+  const shoutImage = `${commonData?.shoutData?.imageBaseUrl}/${cloudinaryId}`;
   switch (componentConfig.type || componentConfig.componentName) {
     case 'Hero':
       return (
@@ -87,27 +87,29 @@ const componentFactory = (componentConfig, commonData, siteConfig) => {
     case 'SideBySideImage':
       // TODO instead of 'story' it should be identifier and or better props instead of story-specific.
       return (
-        <SideBySideImage
-          story={findStoryByName(
-            identifier || storyName,
-            commonData.storiesData.general,
-            true
-          )}
-          config={
-            config || {
-              reversed: true,
-              ignoreQuery: true,
+        <div id={config?.id}>
+          <SideBySideImage
+            story={findStoryByName(
+              identifier || storyName,
+              commonData.storiesData.general,
+              true
+            )}
+            config={
+              config || {
+                reversed: true,
+                ignoreQuery: true,
+              }
             }
-          }
-          sideBySideVariation={
-            variation || config.sideBySideVariation || sideBySideVariation
-          }
-          contentVariation={config.contentVariation || contentVariation}
-          imageVariation={config.imageVariation || imageVariation}
-          withExtendedTopTitle={
-            config.withExtendedTopTitle || withExtendedTopTitle
-          }
-        />
+            sideBySideVariation={
+              variation || config.sideBySideVariation || sideBySideVariation
+            }
+            contentVariation={config.contentVariation || contentVariation}
+            imageVariation={config.imageVariation || imageVariation}
+            withExtendedTopTitle={
+              config.withExtendedTopTitle || withExtendedTopTitle
+            }
+          />
+        </div>
       );
     case 'Press':
       return (

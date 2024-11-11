@@ -3,6 +3,8 @@ export const NavItem = {
     px: 4,
     fontSize: ['xs', 'sm', 'md'],
     color: 'dark',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
   },
   variants: {
     navRight: {}, // variant for right side nav items

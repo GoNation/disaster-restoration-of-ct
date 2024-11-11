@@ -126,9 +126,9 @@ export default function BenjaminFooter({ business, routes }) {
             })}
           </Flex>
 
-          <InfoSection icon={FaMapPin} href={getGoogleString(business)}>
+          {/* <InfoSection icon={FaMapPin} href={getGoogleString(business)}>
             {printAddress(business)}
-          </InfoSection>
+          </InfoSection> */}
 
           <InfoSection icon={FaPhone} href={`tel:${business.phone}`}>
             {formatPhone(business.phone)}

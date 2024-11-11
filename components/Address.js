@@ -6,6 +6,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Address({ business, style, fill }) {
   const useIcon = true;
+  return '';
   return (
     <Text
       as="a"

@@ -3,6 +3,8 @@ export const Navigation = {
     navigation: {
       gridTemplateColumns: 'repeat(12, 1fr)',
       alignItems: 'center',
+      px: 4,
+      py: 2,
     },
     // Grid Item containers
     logoGridItem: {
@@ -11,9 +13,9 @@ export const Navigation = {
       alignItems: 'center',
     },
     navItemsGridItem: {
-      colSpan: [0, 0, 8], // Hide nav items on mobile, show on larger screens
+      colSpan: [0, 0, 10], // Hide nav items on mobile, show on larger screens
       display: ['none', 'none', 'flex'],
-      justifyContent: 'center',
+      justifyContent: 'flex-end',
     },
     hamburgerGridItem: {
       colSpan: [2, 2, 2], // Show the hamburger menu on mobile
@@ -21,7 +23,7 @@ export const Navigation = {
       justifyContent: 'flex-end',
     },
     alternateGridItem: {
-      colSpan: [0, 0, 2], // Only show this on larger screens
+      colSpan: [0, 0, 0], // Only show this on larger screens
       display: ['none', 'none', 'flex'],
       justifyContent: 'flex-end',
     },
